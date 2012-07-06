@@ -1,0 +1,13 @@
+---
+title: What I've been up to
+layout: blog-post
+---
+My life has been pretty busy for the past couple of months, and thus I have been pretty much dead to the world in terms of blogging. I've been building up a list of blog post ideas in [Wunderlist][], but I just haven't gotten around to writing them. Part of that was due, also to, the platform I was on. [Nesta CMS][nesta] proved to be too much for me, so I decided to move my site. I'm now running on [Jekyll][] running on [GitHub Pages][gh-pages], which I hope will help me to write more.
+
+So the largest thing that has kept me quiet over the past couple of months has been starting a new job. In April, I was asked to join the team at [Recruitics][], a tech startup here in Connecticut connecting recruiters to their applicants in a more social format. I know, I know, we all hate recruiters, which is the exact reason why I took the job. Recruitics isn't catering to the recruiters that most developers know of, who are calling and emailing from India, talking about things they know absolutely nothing about. Recruitics is about making recruiters sociable and giving faces to the people providing us jobs. The other goal of Recruitics is to get jobs out to the world through mediums that people actually look for jobs at.
+
+[Wunderlist]: http://www.6wunderkinder.com/wunderlist/
+[nesta]: http://nestacms.com
+[Jekyll]: http://jekyllrb.com "Jekyll Static Site Generator"
+[gh-pages]: http://github.com/davejlong/davejlong.github.com "Source code for davejlong.com"
+[Recruitics]: http://recruitics.com

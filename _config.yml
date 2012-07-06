@@ -1,3 +1,8 @@
 source: ./src
 destination: ./site
 paginate: 10
+disqus: davejlong
+
+# Dev only
+server: true
+auto: true
