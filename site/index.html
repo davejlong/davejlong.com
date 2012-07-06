@@ -38,7 +38,28 @@
   </div>
   <div id="content"><div class="row">
   <div class="nine columns">
-    <p>Blog</p>
+    
+  <div class="post">
+    <h2><a href="/2012/07/06/deployment-in-recruitics.html">How we handle Deployments in Recruitics</a></h2>
+    <div class="meta">
+      Posted on 2012-07-06 00:00:00 -0400
+    </div>
+    <hr />
+    <div class="content">
+      <p>It&#8217;s nothing new that I love <a href='http://git-scm.com' title='Git DVCS'>Git</a>. I&#8217;ve done talks about it, help clients get learn to use it and now I have gotten to start using it in development of <a href='http://recruitics.com' title='Internet Recruitment Marketing'>Recruitics</a>, the company that I am now working for.</p>
+
+<p>When I started with the company version control was the classic rename the file method (index1.cfm, index2.cfm, index3.cfm and index.cfm). This would work fine, except that you end up with tons of copies of files on the server, and what do you do if you forget to make your copy. The second one is easily solved in Git:</p>
+
+<pre><code>git add .
+git stash
+git checkout -b [branch]
+git stash apply</code></pre>
+
+<p>Thanks to <a href='http://github.com/davejlong' title='Hosted Git with GitHub'>GitHub</a>, and the <a href='http://mac.github.com' title='GitHub for Mac'>GitHub GUI Apps</a> everyone has been able to pick up the basics of Git pretty quickly.</p>
+    </div>
+  </div>
+
+
   </div>
   <div class="three columns">
     <div class="panel">

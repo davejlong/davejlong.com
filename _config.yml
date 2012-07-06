@@ -1,2 +1,3 @@
 source: ./src
 destination: ./site
+paginate: 10

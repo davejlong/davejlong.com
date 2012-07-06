@@ -1,0 +1,15 @@
+It's nothing new that I love [Git][]. I've done talks about it, help clients get learn to use it and now I have gotten to start using it in development of [Recruitics][], the company that I am now working for.
+
+When I started with the company version control was the classic rename the file method (index1.cfm, index2.cfm, index3.cfm and index.cfm). This would work fine, except that you end up with tons of copies of files on the server, and what do you do if you forget to make your copy. The second one is easily solved in Git:
+  
+    git add .
+    git stash
+    git checkout -b [branch]
+    git stash apply
+
+Thanks to [GitHub][], and the [GitHub GUI Apps][gitgui] everyone has been able to pick up the basics of Git pretty quickly.
+
+[Git]: http://git-scm.com "Git DVCS"
+[Recruitics]: http://recruitics.com "Internet Recruitment Marketing"
+[GitHub]: http://github.com/davejlong "Hosted Git with GitHub"
+[gitgui]: http://mac.github.com "GitHub for Mac"
