@@ -1357,13 +1357,12 @@ jQuery(document).ready(function ($) {
 
 
 /* Lazy Load Disqus Comments */
-var disqus_shortname = "davejlong";
-if( $('#disqud_thread').length > 0 ) {
+if( $('#disqus_thread').length > 0 ) {
   var ds_loaded = false,
-      top = $('.tags').offset().top,
+      _top = $('.meta.after').offset().top,
       lazyLoadDisqus = null;
   lazyLoadDisqus = function () {
-    if( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+    if( !ds_loaded && $(window).scrollTop() + $(window).height() > _top ) {
       ds_loaded = true;
       var dsq = document.createElement('script');
       dsq.type = 'text/javascript';
@@ -1373,7 +1372,15 @@ if( $('#disqud_thread').length > 0 ) {
     }
   };
 
-  $(window).scroll( lazyLoadDisqus );
+  $(window).on('scroll', lazyLoadDisqus );
   lazyLoadDisqus();
-        
 }
+
+
+(function () {
+  var s = document.createElement('script');
+  s.async = true;
+  s.type = 'text/javascript';
+  s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());

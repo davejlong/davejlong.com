@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="nine columns">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <div class="meta">
+      <a class="disq" href="#disqus_thread">0 comments</a>
+    </div>
+    <hr />
+    {{ content | markdownify }}
+    <div class="meta after">
+      <span class="date">Posted on {{ page.date || date_to_long_string }}</span>
+    </div>
+    <hr />
+    <script type="text/javascript">
+      var disqus_url = "{{site.url}}{{page.url}}";
+      var disqus_identifier = "{{site.url}}{{page.url}}";
+      var disqus_title = "{{page.title | escape_doublequotes}}";
+    </script>
+    <div id="disqus_thread"></div>
+  </div>
+</div>

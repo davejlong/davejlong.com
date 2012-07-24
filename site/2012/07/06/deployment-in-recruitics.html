@@ -1,15 +1,89 @@
-It's nothing new that I love [Git][]. I've done talks about it, help clients get learn to use it and now I have gotten to start using it in development of [Recruitics][], the company that I am now working for.
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
 
-When I started with the company version control was the classic rename the file method (index1.cfm, index2.cfm, index3.cfm and index.cfm). This would work fine, except that you end up with tons of copies of files on the server, and what do you do if you forget to make your copy. The second one is easily solved in Git:
-  
-    git add .
-    git stash
-    git checkout -b [branch]
-    git stash apply
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
 
-Thanks to [GitHub][], and the [GitHub GUI Apps][gitgui] everyone has been able to pick up the basics of Git pretty quickly.
+  <title>How we handle Deployments in Recruitics / Dave Long</title>
 
-[Git]: http://git-scm.com "Git DVCS"
-[Recruitics]: http://recruitics.com "Internet Recruitment Marketing"
-[GitHub]: http://github.com/davejlong "Hosted Git with GitHub"
-[gitgui]: http://mac.github.com "GitHub for Mac"
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="/all.css">
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/stylesheets/ie.css">
+  <![endif]-->
+
+  <script src="/javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script>
+    var disqus_shortname = "davejlong",
+        disqus_developer = 1,
+        disqus_container_id = "disqus_thread",
+        disqus_domain = "disqus.com";
+  </script>
+</head>
+<body>
+  <div id="header">
+    <div class="row">
+      <div class="twelve columns">
+        <h1><a id="brand" href="/">Dave Long</a></h1>
+        <hr />
+      </div>
+    </div>
+  </div>
+  <div id="content"><div class="row">
+  <div class="nine columns">
+    <h2><a href="/2012/07/06/deployment-in-recruitics.html">How we handle Deployments in Recruitics</a></h2>
+    <div class="meta">
+      <a class="disq" href="#disqus_thread">0 comments</a>
+    </div>
+    <hr />
+    <p>It&#8217;s nothing new that I love <a href='http://git-scm.com' title='Git DVCS'>Git</a>. I&#8217;ve done talks about it, help clients get learn to use it and now I have gotten to start using it in development of <a href='http://recruitics.com' title='Internet Recruitment Marketing'>Recruitics</a>, the company that I am now working for.</p>
+
+<p>When I started with the company version control was the classic rename the file method (index1.cfm, index2.cfm, index3.cfm and index.cfm). This would work fine, except that you end up with tons of copies of files on the server, and what do you do if you forget to make your copy. The second one is easily solved in Git:</p>
+
+<pre><code>git add .
+git stash
+git checkout -b [branch]
+git stash apply</code></pre>
+
+<p>Thanks to <a href='http://github.com/davejlong' title='Hosted Git with GitHub'>GitHub</a>, and the <a href='http://mac.github.com' title='GitHub for Mac'>GitHub GUI Apps</a> everyone has been able to pick up the basics of Git pretty quickly.</p>
+    <div class="meta after">
+      <span class="date">Posted on 06 July 2012</span>
+    </div>
+    <hr />
+    <script type="text/javascript">
+      var disqus_url = "/2012/07/06/deployment-in-recruitics.html";
+      var disqus_identifier = "/2012/07/06/deployment-in-recruitics.html";
+      var disqus_title = "How we handle Deployments in Recruitics";
+    </script>
+    <div id="disqus_thread"></div>
+  </div>
+</div>
+</div>
+
+  <div id="footer">
+    <div class="row">
+      <div class="twelve columns">
+        <hr />
+        <p>&copy; 2012 Dave Long. All content licensed under Creative Commons Share-Alike</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Included JS Files -->
+  <script src="/app.js"></script>
+
+</body>
+</html>
