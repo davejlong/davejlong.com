@@ -8,6 +8,11 @@
 {% include javascripts/jquery.tooltips.js %}
 {% include javascripts/app.js %}
 
+var disqus_shortname = "{{ site.disqus }}",
+    disqus_developer = 1,
+    disqus_container_id = "disqus_thread",
+    disqus_domain = "disqus.com";
+
 /* Lazy Load Disqus Comments */
 if( $('#disqus_thread').length > 0 ) {
   var ds_loaded = false,
