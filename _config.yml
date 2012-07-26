@@ -3,7 +3,7 @@ url: http://davejlong.com
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
-markdown: RDiscount
+markdown: rdiscount
 
 exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']
 destination: 'public'
