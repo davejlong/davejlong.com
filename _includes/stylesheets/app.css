@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2em;
 }
 
+#tweet, #tweet p {
+  font-size: 0.9em;
+}
 #tweet .status {
   margin-bottom: 0.2em;
 }
