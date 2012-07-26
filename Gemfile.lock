@@ -58,5 +58,6 @@ PLATFORMS
 
 DEPENDENCIES
   heroku
+  maruku
   rack-jekyll!
   unicorn
