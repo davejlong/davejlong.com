@@ -10,9 +10,9 @@
     </div>
     <div class="meta">
       <dl class="sub-nav">
-        <dt>Categories - </dt>
-        {% for category in post.categories %}
-          <dd>{{ category }}</dd>
+        <dt>Tags: </dt>
+        {% for tag in post.tags %}
+          <dd><a href="/tags/{{ tag | lowercase }}">{{ tag }}</a></dd>
         {% endfor %}
       </dl>
     </div>

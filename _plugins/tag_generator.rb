@@ -11,7 +11,7 @@ module Jekyll
       self.data['tag'] = tag
 
       tag_title_prefix = site.config['tag_title_prefix'] || 'Tag / '
-      selt.data['title'] = "#{tag}"
+      self.data['title'] = "#{tag}"
     end
   end
 
