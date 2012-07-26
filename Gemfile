@@ -1,5 +1,5 @@
 source :rubygems
 
-gem 'jekyll'
-gem 'maruku'
-
+gem 'rack-jekyll', github: 'adaoraul/rack-jekyll'
+gem 'unicorn'
+gem 'heroku'
