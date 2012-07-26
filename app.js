@@ -6,12 +6,13 @@
 {% include javascripts/jquery.customforms.js %}
 {% include javascripts/jquery.placeholder.min.js %}
 {% include javascripts/jquery.tooltips.js %}
+{% include javascripts/moment.js %}
 {% include javascripts/app.js %}
 
 var disqus_shortname = "{{ site.disqus }}",
-    disqus_developer = 1,
-    disqus_container_id = "disqus_thread",
-    disqus_domain = "disqus.com";
+  disqus_developer = 1,
+  disqus_container_id = "disqus_thread",
+  disqus_domain = "disqus.com";
 
 /* Lazy Load Disqus Comments */
 if( $('#disqus_thread').length > 0 ) {
@@ -33,11 +34,34 @@ if( $('#disqus_thread').length > 0 ) {
   lazyLoadDisqus();
 }
 
-
 (function () {
   var s = document.createElement('script');
   s.async = true;
   s.type = 'text/javascript';
   s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+
+$(function () {
+  // Load twitter
+  var account = 'davejlong',
+      $container = $('#tweet'),
+      linkify;
+  linkify = function (text) {
+    exp = /((?:ftp|http|https):\/\/)((\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi;
+    text = text.replace(exp, "<a href=\"$1$2\" target=\"_blank\">$2</a>");
+    text = text.replace(/#([A-Za-z0-9_]+)/gi, "<a href=\"http://twitter.com/search/%23$1\" target=\"_blank\">#$1</a>");
+    return text.replace(/@([A-Za-z0-9_]+)/gi, "<a href=\"http://twitter.com/$1\" target=\"_blank\">@$1</a>");
+  };
+
+  $.ajax({
+    url: 'http://twitter.com/statuses/user_timeline/' + account + '.json?count=1',
+    dataType: 'jsonp',
+    success: function (data) {
+      var tweet = data[0];
+      console.log(tweet);
+      $container.find('.status').html(linkify(tweet.text));
+      $container.find('.date').text(moment(tweet.created_at).fromNow());
+    }
+  });
 }());

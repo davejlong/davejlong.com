@@ -5,9 +5,16 @@
       <a class="disq" href="{{ site.url }}{{ post.url }}#disqus_thread">0 comments</a>
       <span class="date">Posted on {{ post.date || date_to_long_string }}</span>
     </div>
-    <hr />
     <div class="content">
       {{ post.content | markdownify }}
+    </div>
+    <div class="meta">
+      <dl class="sub-nav">
+        <dt>Categories - </dt>
+        {% for category in post.categories %}
+          <dd>{{ category }}</dd>
+        {% endfor %}
+      </dl>
     </div>
   </div>
   <hr />

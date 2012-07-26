@@ -4,31 +4,46 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+:: Blog
 */
 
 
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crete Round', serif;
+}
+
 #footer {
-  color: #444;
+  color: gray;
 }
 
 .panel h3 {
   font-size: 1.2em;
 }
 
+#tweet .status {
+  margin-bottom: 0.2em;
+}
+#tweet .meta {
+  font-size: 0.9em;
+  text-align: right;
+}
 
 /* -----------------------------------------
-   Page Name 1
+   Blog
 ----------------------------------------- */
+.post h3 {
+  margin-bottom: 0;
+}
 
+.post .meta {
+  font-size: 0.9em;
+  color: gray;
+  margin-bottom: 1em;
+}
 
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
+.post .meta .date {
+  float: right;
+}
