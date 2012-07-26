@@ -1,5 +1,5 @@
 paginate: 10
 disqus: davejlong
-url: http://davejlong.github.com
+url: http://arcane-lake-4040.herokuapp.com/
 permalink: /:year/:month/:day/:title/
 markdown: maruku
