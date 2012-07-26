@@ -2,3 +2,4 @@ paginate: 10
 disqus: davejlong
 url: http://davejlong.github.com
 permalink: /:year/:month/:day/:title/
+markdown: maruku
