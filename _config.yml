@@ -1,5 +1,5 @@
 disqus: davejlong
-url: http://arcane-lake-4040.herokuapp.com/
+url: http://davejlong.com
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
