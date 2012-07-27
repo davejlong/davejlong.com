@@ -1,8 +1,7 @@
 module Jekyll
   module AssetFilter
     def asset_url(input)
-      sha = `git log -n 1`.match(/^commit\ ([a-z0-9]+)$/m)[1] 
-      "#{@context.registers[:site].config['url']}/#{input}?#{sha}"
+      "#{@context.registers[:site].config['url']}/#{input}?#{Time.now.to_i}"
     end
   end
 end
