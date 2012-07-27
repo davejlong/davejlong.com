@@ -1,0 +1,15 @@
+---
+layout: blog-post
+title: CF Utils for Vim
+tags: [development, coldfusio:]
+published: true
+---
+The most important thing to a developer is enabling them to code quickly and easily. If a developer can't do that, then code will come out slowly, which inevitably means the managers will complain. I, personally, love using [Vim][] to code. Vim keeps up with how fast I code, so I don't have to sit around and wait for my editor to catch up to me (I'm looking at you Eclipse). The only problem with Vim is that it's [ColdFusion][] support is horrible. It really only supports CFML and that doesn't jive with me, and that's why I started [CF Utils][cfutils], a plugin for Vim to add better CF support.
+
+The first goal of CF Utils.vim is to add better support for the lanuggaes of ColdFusion. With the release of ColdFusion 9, cfscripting was put on the front burner as an awesome language to use for components that don't drive views; most of my component style code is now in cfscript. CFML is fantastic for view driven code and is lacking in most other languages. The existing ColdFusion syntax file for Vim has some cfscript support, but not on the level of modern ColdFusion applications *(think ColdFusion 8)*. CF Utils.vim has already added lots of support for cfscript based components, while still leveraging the existing ColdFusion syntax file for CFML based code.
+
+The second goal of CF Utils.vim is to integrate with local ColdFusion environments (including Railo and Open Bluedragon) to provide CF Builder-like extensions to Vim. I don't know how I'm going to do this, yet, but I will figure it out as it comes. I just want to see a ColdFusion editor that is as powerful as CF Builder, without any of the cost.
+
+[Vim]: http://www.vim.org "Vim Text Editor"
+[ColdFusion]: http://www.adobe.com/go/coldfusion "ColdFusion"
+[cfutils]: http://www.github.com/davejlong/cf-utils.vim "CF Utils on GitHub"
