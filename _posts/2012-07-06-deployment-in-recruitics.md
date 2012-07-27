@@ -2,6 +2,7 @@
 layout: blog-post
 title: How we handle Deployments in Recruitics
 tags: [git, recruitics]
+published: true
 ---
 
 It's nothing new that I love [Git][]. I've done talks about it, help clients get learn to use it and now I have gotten to start using it in development of [Recruitics][], the company that I am now working for.

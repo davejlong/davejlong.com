@@ -2,6 +2,7 @@
 title: What I've been up to
 layout: blog-post
 tags: [life]
+published: true
 ---
 My life has been pretty busy for the past couple of months, and thus I have been pretty much dead to the world in terms of blogging. I've been building up a list of blog post ideas in [Wunderlist][], but I just haven't gotten around to writing them. Part of that was due, also to, the platform I was on. [Nesta CMS][nesta] proved to be too much for me, so I decided to move my site. I'm now running on [Jekyll][] running on [Heroku][], which I hope will help me to write more.
 
