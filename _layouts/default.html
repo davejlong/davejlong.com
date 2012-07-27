@@ -14,13 +14,13 @@
 
   <!-- Included CSS Files -->
   <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/all.css">
+  <link rel="stylesheet" href="{{ 'all.css' | asset_url }}">
 
   <!--[if lt IE 9]>
-    <link rel="stylesheet" href="/stylesheets/ie.css">
+    <link rel="stylesheet" href="{{ 'stylesheets/ie.css' | asset_url }}">
   <![endif]-->
 
-  <script src="/javascripts/modernizr.foundation.js"></script>
+  <script src="{{ 'javascripts/modernizr.foundation.js' | asset_url }}"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -61,7 +61,7 @@
   </div>
 
   <!-- Included JS Files -->
-  <script src="/app.js"></script>
+  <script src="{{ 'app.js' | asset_url }}"></script>
   <script type="text/javascript">
     var _gauges = _gauges || [];
     (function() {
