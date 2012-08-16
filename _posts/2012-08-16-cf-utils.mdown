@@ -10,6 +10,12 @@ The first goal of CF Utils.vim is to add better support for the languages of Col
 
 The second goal of CF Utils.vim is to integrate with local ColdFusion environments (including Railo and Open Bluedragon) to provide CF Builder-like extensions to Vim. I don't know how I'm going to do this, yet, but I will figure it out as it comes. I just want to see a ColdFusion editor that is as powerful as CF Builder, without any of the cost.
 
+I also want to thank [Jeremy Hustman][jphustman], or [jphustman][jphustman] as he's known on [GitHub][github] for being the first contributor to CF Utils. Jeremy merged his own Vim toolset for CFML development into CF Utils which added some new features for ColdFusion 10, snippets and tabbing. Thanks Jeremy, and I look forward to your future contributions to CF Utils.
+
+If you want to contribute to CF Utils, head on over to [GitHub][cfutils] and fork the code for yourself.
+
 [Vim]: http://www.vim.org "Vim Text Editor"
 [ColdFusion]: http://www.adobe.com/go/coldfusion "ColdFusion"
 [cfutils]: http://www.github.com/davejlong/cf-utils.vim "CF Utils on GitHub"
+[jphustman]: http://github.com/jphustman "Jeremy Hustman on GitHub"
+[github]: http://github.com "GitHub GIT Version Control"
