@@ -1,0 +1,37 @@
+---
+layout: blog-post
+title CFThread to Speed Up Requests
+tags: [development]
+published: true
+---
+
+This week I discovered just how awesome threads can be. When talking about threads it is normally to run multiple sets of code side by side and then join them together when they are all done. That's useful sometimes, but my use for them this week has been hugely more useful to me.
+
+So, let me setup a scenario for you to understand what's going on. Let's say you have an application and need to track every page that a user visits, which in enterprise application development is fairly common. What you would normally do is in one of the `onRequest*` methods include a simple script that does just that, stores in a database somewhere the user and which page they viewed. Now does the user really care that they are being tracked or is the tracking returning anything back to the user? Probably not, so why should we hold up the request to store the user's data? This is where threading comes in. We can start a new thread so that the request doesn't get held up at all.
+
+Alright, so let's take a look at some code so that y'all can know what I'm talking about. I'm going to just show the onRequestEnd method of my Application.cfc for this:
+
+    /**
+    * @access public
+    * @returnType boolean
+    * @hint Runs User Tracking in a thread
+    **/
+    function onRequestEnd () {
+      var _cgi = cgi; // We have to store the CGI scope as it goes away once the request ends
+      var requestTimestamp = now(); // Store a timestamp with the request
+      
+      thread action='run' name='local.tracking' {
+        writeLog("#Session.userid#: page: #_cgi.script_name#?#_cgi.query_string# at #requestTimestamp#", 'information', true, 'tracking');
+      }
+    }
+
+Okay, so this is a really simple tracking that simply tracks to a log file instead of a database, but you get the idea. The method opens a new thread and logs that request into the log file at the end of every request, so now you can search through the log file and see every page that users see.
+
+### A couple of notes
+So there's a couple of things to keep in mind with threads in ColdFusion.
+
+#### 1 CGI scope goes Away at the end of the request
+Once the request finishes the CGI scope goes away, so make sure to create a copy of it before opening the thread in case the thread takes longer than the request (which is the whole idea of the thread).
+
+#### 2 Bug on CF Tags as CFCs
+There's some sort of bug that I ran into in ColdFusion 9.0.1 where tags as CFCs like `query()`, `ftp()` and `http()` don't work, because of a path missing. The way around this is before you open the thread to instantiate a temporary instance of the CFC that you need. For example if you are going to use a query in your thread just add `new Query();` before you open the thread.
