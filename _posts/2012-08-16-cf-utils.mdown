@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: CF Utils for Vim
-tags: [development, coldfusio:]
+tags: [development, coldfusion]
 published: true
 ---
 The most important thing to a developer is enabling them to code quickly and easily. If a developer can't do that, then code will come out slowly, which inevitably means the managers will complain. I, personally, love using [Vim][] to code. Vim keeps up with how fast I code, so I don't have to sit around and wait for my editor to catch up to me (I'm looking at you Eclipse). The only problem with Vim is that it's [ColdFusion][] support is horrible. It really only supports CFML and that doesn't jive with me, and that's why I started [CF Utils][cfutils], a plugin for Vim to add better CF support.

@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title CFThread to Speed Up Requests
+title: CFThread to Speed Up Requests
 tags: [development]
 published: true
 ---
