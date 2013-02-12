@@ -1,0 +1,17 @@
+---
+layout: blog-post
+title: Customize your editor
+tags: [vim, editors]
+published: true
+---
+
+As a programmer, your editor is your life; whether you use a text editor, IDE or some hybrid of the two, it's important to make it something that you're comfortable with.
+
+The first thing that most people will probably do when they start customizing the editor, is change the color scheme. Most editors are pre-set with a light theme that is usually a white background. Well, let me just say welcome to a whole new world. Some of my favorite themes have both light and dark versions. The [Tomorrow][] theme set comes with a light, dark and medium versions of the theme and [Solarized][] comes with both a light and dark theme. Besides just a color theme customizing the font that your editor uses is also very important. Most editors have some variant of Consolas by default, which in my opinion, is an extremely ugly font to stare at all day\*. The first thing I do in almost any editor after I change the theme is change the font to be Inconsolata. I also set my font size somewhere around 10 pixels, depending on how I'm feeling that day.
+
+Colors and fonts are only the first step in customizing your editor.
+
+*A note about Consolas: It is only my opinion that Consolas is not a good font for editors, and that is all it should be taken as. There are many people who would disagree and tell me that Inconsolata is an ugly font for editors*
+
+[Tomorrow]
+[Solarized]

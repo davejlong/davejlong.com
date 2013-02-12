@@ -1,0 +1,20 @@
+---
+layout: blog-post
+title: String replacement in Ruby
+tags: [ruby]
+published: true
+---
+
+I've been walking through the [TryRuby][] cource on [Code School][codeschool] and I love some of the things I've been learning along the way. Today I learned a new way to do string replacement which kind of fascinates me.
+
+In the past I always had to look up what the Grep function was in Ruby, but today I learned you can use bracket notation to replace a single instance of a string within another string.
+
+    mystring = "Hello, My name is John Smith"
+    mystring["John Smith"] = "David Long"
+
+    print mystring # => "Hello, My name is David Long"
+
+I know it's probably not that impressive to all you big Ruby people, but to me it's pretty cool.
+
+[TryRuby]: http://tryruby.org "Beginner's Guide to Ruby"
+[codeschool]: http://codeschool.com "Great courses on many popular programming languages"
