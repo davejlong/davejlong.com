@@ -2,7 +2,7 @@
 layout: blog-post
 title: Customize your editor
 tags: [vim, editors]
-published: true
+published: false
 ---
 
 As a programmer, your editor is your life; whether you use a text editor, IDE or some hybrid of the two, it's important to make it something that you're comfortable with.
