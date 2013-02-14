@@ -1,11 +1,9 @@
 ---
 layout: blog-post
-title: String replacement in Ruby
+title: Opera going to WebKit
 tags: [browsers]
 published: true
 ---
-
-# What Opera's Announcement Means
 
 So it was announced a couple days ago that [Opera][], the least popular of the top four desktop browsers, would be switching it's rendering engine from their own Presto engine to [Webkit][] and [Chromium][]. While [Robert O'Callahan][moz] gripes about the "sad day for the web", I think this is a great thing for both designers/developers and users alike. 
 
