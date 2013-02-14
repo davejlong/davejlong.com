@@ -55,7 +55,7 @@ $(function () {
   };
 
   $.ajax({
-    url: 'http://twitter.com/statuses/user_timeline/' + account + '.json?count=1',
+    url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=' + account + '&count=1',
     dataType: 'jsonp',
     success: function (data) {
       var tweet = data[0];
