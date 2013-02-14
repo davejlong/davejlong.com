@@ -1,0 +1,23 @@
+---
+layout: blog-post
+title: String replacement in Ruby
+tags: [browsers]
+published: true
+---
+
+# What Opera's Announcement Means
+
+So it was announced a couple days ago that [Opera][], the least popular of the top four desktop browsers, would be switching it's rendering engine from their own Presto engine to [Webkit][] and [Chromium][]. While [Robert O'Callahan][moz] gripes about the "sad day for the web", I think this is a great thing for both designers/developers and users alike. 
+
+One thing that has help developers and designers back from building super rich interactive web sites and applications has been that when you get into testing, there's always something buggy with at least one browser. CORS, for example, wasn't available in Opera until version 12 according to [Can I Use][usecors]. With this announcement it means that frontend developers have one less rendering engine to worry about.
+
+For users, it will mean that more rich applications will become available and with three major companies working on building the WebKit engine, this will mean less bugs, more security (especially with Opera coming to the game) and more innovative features.
+
+Read the full announcemnet on [Opera's Press Release][press]
+
+[Opera]: http://www.opera.com "Opera Web Browser"
+[Webkit]: http://www.webkit.org "WebKit Open Source Project"
+[Chromium]: http://chromium.org "Chromium Projects"
+[moz]: http://robert.ocallahan.org/2013/02/and-then-there-were-three.html "Robert O'Callahan Gripes About Opera's Announcement"
+[usecors]: http://caniuse.com/#feat=cors "Support tables for HTML5, CSS3, etc."
+[press]: http://www.opera.com/press/releases/2013/02/13/ "Opera gears up at 300 million users"
