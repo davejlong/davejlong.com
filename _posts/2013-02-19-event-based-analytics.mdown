@@ -1,0 +1,16 @@
+---
+layout: blog-post
+title: Is Event Based Analytics Going to Overtake Page Based Analytics?
+tags: [analytics]
+published: true
+---
+
+I've been focusing a ton on building the [Recruitics][] Analytics platform over the past six months, and I'm really proud of the platform that we've built. After reading a blog by [Jamie Quint][jq] on the [Future of Analytics][future], I'm thinking that event based analytics is far more impressive and easier than page based. The Recruitics analytics tool is very specialized towards tracking views and applicants on job boards, and similar to Google Analytics, if a client wants to tell us the job id or whether there is an applicant, they set flags in the embedded JavaScript. With an event based system, they could just call functions against the analytics library to mark a view to a job, or an applicant to a job.
+
+Event based analytics are definitely going to take over the market that is currently run by page based analytics systems and application and website become more interactive.
+
+Read the full article on [Jamie Quint's blog][future]
+
+[Recruitics]: http://www.recruitics.com "Recruitment Marketing powered by Analytics"
+[jq]: http://jamiequint.com "Founder of Lookcraft"
+[future]: http://jamiequint.com/the-future-of-analytics "The Future of Analytics - The Data Platform"
