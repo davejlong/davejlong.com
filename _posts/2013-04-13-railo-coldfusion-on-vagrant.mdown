@@ -1,0 +1,55 @@
+---
+layout: blog-post
+title: Railo and ColdFusion Boxes for Vagrant
+tags: [railo, coldfusion, vagrant]
+published: true
+---
+
+Lately I've been doing a lot of development for both ColdFusion and Railo, which has been made a lot easier with [Vagrant](http://vagrantup.com). Vagrant is an application for Windows, Mac and Linux that allows developers to easily create pre-configured virtual machines in Virtualbox for testing and development. With my Vagrant boxes a development vm takes about 5 minutes to setup and get running.
+
+### Railo Box
+[Railo][railo] is my favorite CFML engine by far. In performance tests it runs faster, stronger and lighter than ColdFusion, and it's open source model rocks! My Railo box comes bundled with the following features:
+
+- Ubuntu 12.04 LTS 64 bit
+- Railo 4.0.5
+- Tomcat 7
+- Vim
+- My dotfiles ([github.com/davejlong/dotfiles][dotfiles])
+- RVM with Ruby 2.0.0
+
+Once you've booted the box, Railo is setup to server whatever directory you've started the box from on port 8080.
+
+### ColdFusion Box
+##### Note: Due to my concern's about Adobe's licensing, I've disabled access to my ColdFusion box. I'm in the process of trying to contact the Adobe team to release the box to the public.
+I setup my [ColdFusion][cf] box, because the company that I work for, [Recruitics][recruitics], uses ColdFusion to power their primary application. The box comes with a lot of the same software as the Railo box:
+
+- Ubuntu 12.04 LTS 64 bit
+- ColdFusion 10 on Tomcat
+- Apache 2.4
+- Vim
+- My dotfiles ([github.com/davejlong/dotfiles][dotfiles])
+- RVM with Ruby 2.0.0
+
+Once you've boot the box, ColdFusion is setup to serve whatever directory you've started the box from on port 8000.
+
+### Base Box
+I guess I should mention my base box which includes Ubuntu, Vim, RVM and my dotfiles. It's a great starting box to build your own boxes with for just about anything.
+
+### Installing
+The first thing you'll need to run any of my boxes is to have Virtualbox and Vagrant installed. After that it's just a few simple commands to install the boxes:
+
+<script src="https://gist.github.com/davejlong/5381100.js?file=setup.sh"></script>
+
+Then to add a box to your project just run:
+
+<script src="https://gist.github.com/davejlong/5381100.js?file=run.sh"></script>
+
+That's it.
+
+#### Closing Remarks
+I still have some things I'd like to do on the boxes, most notably I'd like to be able to configure Railo to not create a WEB-INF directory in the webroot.
+
+[railo]: http://getrailo.org "Railo CFML Engine"
+[dotfiles]: http://github.com/davejlong/dotfiles "My dotfiles for Linux, Vim, ZSH and more!"
+[cf]: http://adobe.com/go/coldfusion "Adobe Coldfusion CFML Engine"
+[recruitics]: http://recruitics.com "Recruitics Marketing and Analytics"

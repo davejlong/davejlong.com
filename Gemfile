@@ -1,7 +1,6 @@
-source :rubygems
+source 'http://rubygems.org'
 
 gem 'rack-jekyll', github: 'adaoraul/rack-jekyll'
 gem 'unicorn'
-gem 'heroku'
 gem 'rdiscount'
 gem 'RedCloth'
